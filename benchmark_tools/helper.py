@@ -1,6 +1,6 @@
 import importlib.util
-from client_protocol import ClientProtocol
 import threading
+from .client_protocol import ClientProtocol
 
 
 class ThreadWrapper(threading.Thread):

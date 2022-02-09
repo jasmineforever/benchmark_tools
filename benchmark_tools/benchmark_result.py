@@ -1,6 +1,6 @@
-from benchmark_context import FinalResult
 import math
 from colorama import Fore, Back, Style
+from .benchmark_context import FinalResult
 
 
 def get_prefix_format() -> str:

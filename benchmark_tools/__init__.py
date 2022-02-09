@@ -6,14 +6,14 @@ from datetime import datetime
 from typing import List, Union, Tuple
 from multiprocessing import Process, Queue
 import threading
-from helper import ThreadWrapper
-from benchmark_conf import BenchmarkConfig, load_benchmark_config_from_file
-from benchmark_tool import BenchmarkTool
-from benchmark_context import RunResult, FinalResult
-from client_protocol import ClientProtocol
-from benchmark_result import BenchmarkResult
-import rps_dash
 import uvloop
+from .helper import ThreadWrapper
+from .benchmark_conf import BenchmarkConfig, load_benchmark_config_from_file
+from .benchmark_tool import BenchmarkTool
+from .benchmark_context import RunResult, FinalResult
+from .client_protocol import ClientProtocol
+from .benchmark_result import BenchmarkResult
+from . import rps_dash
 
 
 REPORT_INTERVAL = 1

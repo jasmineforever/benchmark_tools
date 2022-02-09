@@ -1,6 +1,6 @@
 from abc import ABCMeta, abstractmethod
-from benchmark_context import BenchmarkContext
 from typing import Optional, Mapping, Any, Union
+from .benchmark_context import BenchmarkContext
 
 
 class ClientProtocol(metaclass=ABCMeta):

@@ -5,11 +5,11 @@ import random
 import cmath
 from copy import deepcopy
 from typing import List, Callable, Union, Tuple
-from client_protocol import ClientProtocol
-from benchmark_conf import BenchmarkConfig
-from benchmark_context import BenchmarkContext
-from helper import load_benchmark_class_from_file
-from benchmark_context import RunResult
+from .client_protocol import ClientProtocol
+from .benchmark_conf import BenchmarkConfig
+from .benchmark_context import BenchmarkContext
+from .helper import load_benchmark_class_from_file
+from .benchmark_context import RunResult
 
 
 class BenchmarkTool:

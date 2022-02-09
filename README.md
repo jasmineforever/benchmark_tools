@@ -67,8 +67,8 @@ test_data_file: ./data/data2.json
 完成这两个文件的编写我们就可以开始我们的测试了
 
 ```shell
-export PYTHONPATH=.
-python ./benchmark_tools -f conf/examples/http_post.yml
+export PYTHONPATH=$PWD
+python -m benchmark_tools -f conf/examples/http_post.yml
 ```
 
 ## Result show
