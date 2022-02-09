@@ -1,0 +1,307 @@
+{
+  "datahub": {
+    "created": "2018-03-28T09:52:13.580065",
+    "findability": "unlisted",
+    "flowid": "examples/sample/2",
+    "hash": "1084d810613b7e04378d411087164df8",
+    "modified": "2018-03-28T10:39:15.255667",
+    "owner": "examples",
+    "ownerid": "examples",
+    "stats": {
+      "bytes": 8474,
+      "rowcount": 10
+    }
+  },
+  "id": "examples/sample",
+  "name": "sample",
+  "resources": [
+    {
+      "bytes": 533,
+      "datahub": {
+        "type": "derived/report"
+      },
+      "description": "Validation report for tabular data",
+      "dpp:streamedFrom": "validation_report.json",
+      "format": "json",
+      "hash": "97a2569b7cf74275de9b1843bd955515",
+      "name": "validation_report",
+      "path": "https://pkgstore.datahub.io/examples/sample/validation_report/data/97a2569b7cf74275de9b1843bd955515/validation_report.json",
+      "profile": "data-resource"
+    },
+    {
+      "bytes": 1311,
+      "datahub": {
+        "derivedFrom": [
+          "sample"
+        ],
+        "type": "derived/csv"
+      },
+      "delimiter": ",",
+      "dialect": {
+        "delimiter": ",",
+        "doubleQuote": true,
+        "lineTerminator": "\r\n",
+        "quoteChar": "\"",
+        "skipInitialSpace": false
+      },
+      "dpp:streamedFrom": "https://s3.amazonaws.com/rawstore.datahub.io/e867eba1ca2d6d33b4a16f335305aa66.csv",
+      "encoding": "utf-8",
+      "format": "csv",
+      "hash": "28ec0469c4bfc8bd37dd16babdcff278",
+      "mediatype": "text/csv",
+      "name": "sample_csv",
+      "path": "https://pkgstore.datahub.io/examples/sample/sample_csv/data/28ec0469c4bfc8bd37dd16babdcff278/sample_csv.csv",
+      "pathType": "local",
+      "profile": "data-resource",
+      "quotechar": "\"",
+      "rowcount": 10,
+      "schema": {
+        "fields": [
+          {
+            "format": "default",
+            "name": "header 0",
+            "type": "string"
+          },
+          {
+            "format": "default",
+            "name": "header 1",
+            "type": "string"
+          },
+          {
+            "format": "default",
+            "name": "header 2",
+            "type": "string"
+          },
+          {
+            "format": "default",
+            "name": "header 3",
+            "type": "string"
+          },
+          {
+            "format": "default",
+            "name": "header 4",
+            "type": "string"
+          },
+          {
+            "format": "default",
+            "name": "header 5",
+            "type": "string"
+          },
+          {
+            "format": "default",
+            "name": "header 6",
+            "type": "string"
+          },
+          {
+            "format": "default",
+            "name": "header 7",
+            "type": "string"
+          },
+          {
+            "format": "default",
+            "name": "header 8",
+            "type": "string"
+          },
+          {
+            "format": "default",
+            "name": "header 9",
+            "type": "string"
+          }
+        ],
+        "missingValues": [
+          ""
+        ]
+      },
+      "signed": true
+    },
+    {
+      "bytes": 2721,
+      "datahub": {
+        "derivedFrom": [
+          "sample"
+        ],
+        "type": "derived/json"
+      },
+      "delimiter": ",",
+      "dialect": {
+        "delimiter": ",",
+        "quoteChar": "\""
+      },
+      "dpp:streamedFrom": "https://s3.amazonaws.com/rawstore.datahub.io/e867eba1ca2d6d33b4a16f335305aa66.csv",
+      "encoding": "utf-8",
+      "format": "json",
+      "hash": "72c8e3924f79474ab3067b7ca98dc817",
+      "mediatype": "text/csv",
+      "name": "sample_json",
+      "path": "https://pkgstore.datahub.io/examples/sample/sample_json/data/72c8e3924f79474ab3067b7ca98dc817/sample_json.json",
+      "pathType": "local",
+      "profile": "data-resource",
+      "quotechar": "\"",
+      "rowcount": 10,
+      "schema": {
+        "fields": [
+          {
+            "format": "default",
+            "name": "header 0",
+            "type": "string"
+          },
+          {
+            "format": "default",
+            "name": "header 1",
+            "type": "string"
+          },
+          {
+            "format": "default",
+            "name": "header 2",
+            "type": "string"
+          },
+          {
+            "format": "default",
+            "name": "header 3",
+            "type": "string"
+          },
+          {
+            "format": "default",
+            "name": "header 4",
+            "type": "string"
+          },
+          {
+            "format": "default",
+            "name": "header 5",
+            "type": "string"
+          },
+          {
+            "format": "default",
+            "name": "header 6",
+            "type": "string"
+          },
+          {
+            "format": "default",
+            "name": "header 7",
+            "type": "string"
+          },
+          {
+            "format": "default",
+            "name": "header 8",
+            "type": "string"
+          },
+          {
+            "format": "default",
+            "name": "header 9",
+            "type": "string"
+          }
+        ],
+        "missingValues": [
+          ""
+        ]
+      },
+      "signed": true
+    },
+    {
+      "bytes": 2598,
+      "datahub": {
+        "type": "derived/zip"
+      },
+      "description": "Compressed versions of dataset. Includes normalized CSV and JSON data with original data and datapackage.json.",
+      "dpp:streamedFrom": "/tmp/823.sample.zip",
+      "format": "zip",
+      "name": "sample_zip",
+      "path": "https://pkgstore.datahub.io/examples/sample/sample_zip/data/8e6478a490302b0e11f4aac399834a7e/sample_zip.zip",
+      "profile": "data-resource"
+    },
+    {
+      "bytes": 1311,
+      "datahub": {
+        "type": "source/tabular"
+      },
+      "delimiter": ",",
+      "dialect": {
+        "delimiter": ",",
+        "quoteChar": "\""
+      },
+      "dpp:streamedFrom": "https://s3.amazonaws.com/rawstore.datahub.io/e867eba1ca2d6d33b4a16f335305aa66.csv",
+      "encoding": "ISO-8859-1",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "name": "sample",
+      "path": "https://pkgstore.datahub.io/examples/sample/sample/archive/e867eba1ca2d6d33b4a16f335305aa66/sample.csv",
+      "pathType": "local",
+      "profile": "data-resource",
+      "quotechar": "\"",
+      "schema": {
+        "fields": [
+          {
+            "format": "default",
+            "name": "header 0",
+            "type": "string"
+          },
+          {
+            "format": "default",
+            "name": "header 1",
+            "type": "string"
+          },
+          {
+            "format": "default",
+            "name": "header 2",
+            "type": "string"
+          },
+          {
+            "format": "default",
+            "name": "header 3",
+            "type": "string"
+          },
+          {
+            "format": "default",
+            "name": "header 4",
+            "type": "string"
+          },
+          {
+            "format": "default",
+            "name": "header 5",
+            "type": "string"
+          },
+          {
+            "format": "default",
+            "name": "header 6",
+            "type": "string"
+          },
+          {
+            "format": "default",
+            "name": "header 7",
+            "type": "string"
+          },
+          {
+            "format": "default",
+            "name": "header 8",
+            "type": "string"
+          },
+          {
+            "format": "default",
+            "name": "header 9",
+            "type": "string"
+          }
+        ],
+        "missingValues": [
+          ""
+        ]
+      },
+      "signed": true
+    }
+  ],
+  "title": "Sample",
+  "views": [
+    {
+      "datahub": {
+        "type": "preview"
+      },
+      "name": "datahub-preview-sample_csv_preview",
+      "resources": [
+        "sample"
+      ],
+      "specType": "table",
+      "transform": {
+        "limit": 2000
+      }
+    }
+  ]
+}

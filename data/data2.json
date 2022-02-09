@@ -1,0 +1,21 @@
+{
+  "score_detail": {
+			"keywords": {
+				"score": 0.5,
+				"is_right_order": true
+			},
+			"politesse": {
+				"score": 0.05,
+				"prefix": [{
+					"text": "您好",
+					"pos_begin": 0
+				}]
+			},
+			"similarity": {
+				"score": 0.45,
+				"similarity": 1,
+				"semantic_similarity": 1,
+				"diff_similarity": 1
+			}
+		}
+}

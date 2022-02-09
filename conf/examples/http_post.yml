@@ -1,0 +1,10 @@
+host: "http://127.0.0.1:6301/test"
+users: 800
+hatch_rate: 40
+run_time: 120
+worker: 4
+benchmark_class_file: ./examples/http_post.py
+wait_time: 0
+enable_dash: true
+# other config will add to custom config
+test_data_file: ./data/data2.json
